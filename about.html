@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Duo Hub | Home</title>
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/8c87b7234d.js"
       crossorigin="anonymous"
@@ -11,44 +12,91 @@
   </head>
   <body>
     <header>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="Images/logo.png" alt="Logo" />
+          The Duo <span>Hub</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="biodata.html">Join Us</a></li>
+          <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-      <section class="card1">
-        <img src="" alt="" />
-        <h3>Name: Atolagbe Precious Olawole{OLA}</h3>
-        <h4>Full Stack Developer</h4>
-        <h4>Skills: Java, C++, React, C, Node.js</h4>
-        <h4>Bio: A Second Year SE Student driven by curiousity to build a</h4>
-        <h4>
-          Connect:
-          <div class="social-icons">
-            <a href="https://www.snapchat.com/add/i_amolaa"
-              ><i class="fa-brands fa-snapchat"></i
-            ></a>
-            <a href="https://x.com/oladdev"
-              ><i class="fa-brands fa-twitter-square"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/pwreshy.08?igsh=MWd5OWxzb2JieHRxZw=="
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/atolagbe-precious-79a429263"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+    <section
+      class="team-intro">
+      <div class="intro-container">
+        <h1>About The Team</h1>
+        <p>Meet the minds behind the code.</p>
+      </div>
+    </section>
+
+    <main class="team-section">
+      <section class="container">
+        <h2>Our Developers</h2>
+        <div class="team">
+          <div class="team-card">
+            <img src="Images/my-photo.jpeg" alt="Atolagbe Olawole" class="profile-img">
+            <h3>Atolagbe Olawole {OLA}</h3>
+            <span class="role">Full Stack Developer</span>
+            <p class="skills">Java • C++ • JavaScript • REACT • Node.JS • Express.JS</p>
+            <p>A second-year Software Engineering student at Babcock University. 
+              Driven by curiosity, passionate about theoretical computer science, building intuitive web applications, 
+              and solving complex algorithmic problems.</p>
+              <div class="social-icons">
+                <a href="https://www.snapchat.com/add/i_amolaa">
+                  <i class="fa-brands fa-snapchat"></i>
+                </a>
+                <a href="https://x.com/oladdev">
+                  <i class="fa-brands fa-twitter-square"></i>
+                </a>
+                <a href="https://www.instagram.com/pwreshy.08?igsh=MWd5OWxzb2JieHRxZw=="> <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/atolagbe-precious-79a429263">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
           </div>
-        </h4>
+
+        <div class="team">
+          <div class="team-card">
+            <img src="Images/second-photo.jpeg" alt="Umezinmwa Rita" class="profile-img">
+            <h3>Umezinmwa Rita</h3>
+            <span class="role">UI/UX DESIGNER • FRONTEND DEV</span>
+            <p class="skills">Figma • REACT • Html5 • CSS3 • Javascript</p>
+            <p>A second-year Software Engineering student at Babcock University.
+              Passionate about creating intuitive user experiences and visually appealing interfaces. 
+              Skilled in both design and development, with a focus on responsive web applications.</p>
+              <div class="social-icons">
+                <a href="https://www.snapchat.com/add/ritzuzzy">
+                  <i class="fa-brands fa-snapchat"></i>
+                </a>
+                <a href="https://x.com/oladdev">
+                  <i class="fa-brands fa-twitter-square"></i>
+                </a>
+                <a href="https://www.instagram.com/pwreshy.08?igsh=MWd5OWxzb2JieHRxZw=="> <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/atolagbe-precious-79a429263">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+          </div>
+        </div>
+      
       </section>
 
-      <section class="card2"></section>
     </main>
+    <section class="mission-section">
+      <h2>Our Mission</h2>
+      <p>
+          "To bridge the gap between complex engineering concepts and user-friendly design, 
+          delivering digital solutions that are as efficient as they are beautiful."
+      </p>
+  </section>
 
     <footer>
       <p>
