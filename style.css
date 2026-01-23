@@ -1,5 +1,115 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  /* Brand Colors extracted from Logo */
+  --primary-dark: #18233c; /* Deep Navy */
+  --primary-accent: #00a99d; /* Bright Teal */
+
+  /* Functional Colors */
+  --bg-color: #ffffff;
+  --bg-secondary: #f4f6f8;
+  --text-main: #18233c;
+  --text-light: #6b7280;
+  --white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+header {
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-dark);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo span {
+  color: var(--primary-accent); /* The word 'Hub' is teal */
+}
+
+.logo img {
+  height: 40px; /* Adjust based on your actual logo file */
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary-dark);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-accent);
+}
+
+.btn-nav {
+  background-color: var(--primary-accent);
+  color: var(--white) !important;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+/* main {
+  background-image: url(Images/duo-hub.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 10vw;
+} */
+.hero {
+  height: 80vh;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, #2a3b5e 100%);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.btn-main {
+  background-color: var(--primary-accent);
+  color: var(--white);
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-main:hover {
+  background-color: #008c82; /* Slightly darker teal on hover */
 }
