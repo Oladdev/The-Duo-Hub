@@ -77,7 +77,7 @@ nav {
 
 .hero {
   background: url("Images/duo-hub.png") no-repeat center;
-  max-width: 1200px;
+  background-size: contain;
   position: relative;
   height: 70vh;
   color: var(--white);
