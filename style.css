@@ -106,13 +106,7 @@ nav {
   background-color: #008c82;
 }
 .hero {
-<<<<<<< HEAD
-  background: url("Images/duo-hub.png") no-repeat center;
-  background-size: 80%;
-  position: relative;
-=======
   background: linear-gradient(135deg, var(--primary-dark) 0%, #2a3b5e 100%);
->>>>>>> 42a664c39f0e6fafbd57c720973a250df9b6b6f4
   height: 70vh;
   color: var(--white);
   display: flex;
