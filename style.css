@@ -187,18 +187,6 @@ nav {
 
 /* ---------- ABOUT PAGE --------- */
 /* Team Section */
-.team-intro {
-  padding: 60px 5%;
-  text-align: center;
-  background-color: var(--bg-secondary);
-}
-
-.intro-container {
-  max-width: 400px;
-  margin: 0 auto;
-  border-bottom: 4px solid var(--primary-accent);
-}
-
 .team-section {
   padding: 80px 5%;
   background-color: var(--white);
@@ -211,12 +199,7 @@ nav {
   color: var(--primary-dark);
 }
 
-.team {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap; /* Wraps on smaller screens */
-}
+
 
 .team-card {
   background-color: var(--bg-secondary);
@@ -265,11 +248,7 @@ nav {
   text-transform: uppercase;
 }
 
-.skills {
-  margin: 15px 0;
-  font-style: italic;
-  color: var(--text-light);
-}
+
 /* --- SOCIAL ICONS --- */
 .social-icons {
   margin-top: 30px;
@@ -335,3 +314,5 @@ footer {
   padding: 20px;
   margin-top: auto;
 }
+
+

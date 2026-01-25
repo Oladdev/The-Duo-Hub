@@ -1,0 +1,198 @@
+:root {
+  /* Brand Colors extracted from Logo */
+  --primary-dark: #18233c; /* Deep Navy */
+  --primary-accent: #00a99d; /* Bright Teal */
+
+  /* Functional Colors */
+  --bg-color: #ffffff;
+  --bg-secondary: #f4f6f8;
+  --text-main: #18233c;
+  --text-light: #6b7280;
+  --white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth; /* Smooth scrolling between sections */
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--text-main);
+  line-height: 1.6;
+  opacity: 0; /* Setup for page load animation */
+  animation: pageFadeIn 0.8s forwards;
+}
+
+@keyframes pageFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-dark);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo span {
+  color: var(--primary-accent); /* The word 'Hub' is teal */
+}
+
+.logo img {
+  height: 40px; /* Adjust based on your actual logo file */
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary-dark);
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primary-accent);
+  transition: width 0.3s ease;
+}
+.nav-links a:hover {
+  color: var(--primary-accent);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.btn-nav {
+  background-color: var(--primary-accent);
+  color: var(--white) !important;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.btn-nav:hover {
+  transform: scale(1.05); /* Slight pop effect */
+  background-color: #008c82;
+}
+
+/* ===== Layout ===== */
+main {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* ===== Card Style ===== */
+main section {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+main section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Icons ===== */
+main section i {
+  font-size: 2.5rem;
+  color: #6c63ff;
+  margin-bottom: 1rem;
+}
+
+/* ===== Headings ===== */
+main section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+/* ===== Text ===== */
+main section p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Button ===== */
+main section button {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+main section button:hover {
+  background: #554eea;
+  transform: scale(1.05);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* FOOTER */
+footer {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
