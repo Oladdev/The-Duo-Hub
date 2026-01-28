@@ -179,6 +179,22 @@ main section button:hover {
   transform: scale(1.05);
 }
 
+/* Call to Action Section */
+.cta-section {
+    background-color: var(--bg-secondary);
+    padding: 80px 20%;
+    text-align: center;
+}
+
+.cta-section h2 {
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    margin-bottom: 30px;
+    color: var(--text-light);
+}
+
 /* ===== Responsive ===== */
 /* Tablet devices (768px to 1024px) */
 @media (max-width: 1024px) {
