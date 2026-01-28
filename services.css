@@ -180,15 +180,206 @@ main section button:hover {
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 900px) {
+/* Tablet devices (768px to 1024px) */
+@media (max-width: 1024px) {
+  nav {
+    padding: 1rem 3%;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
   main {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    gap: 1.5rem;
+  }
+
+  main section {
+    padding: 2rem 1.5rem;
+  }
+
+  main section i {
+    font-size: 2rem;
+  }
+
+  main section h2 {
+    font-size: 1.1rem;
+  }
+
+  main section p {
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 600px) {
+/* Mobile devices (480px to 767px) */
+@media (max-width: 767px) {
+  nav {
+    padding: 1rem 2%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .nav-links {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-links li {
+    flex: 1;
+    min-width: auto;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .btn-nav {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin-top: 25px;
+  }
+
   main {
     grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+  }
+
+  main section {
+    padding: 1.5rem 1rem;
+  }
+
+  main section i {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  main section h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  main section p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  main section button {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: 15px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small devices (below 480px) */
+@media (max-width: 479px) {
+  nav {
+    padding: 0.8rem 2%;
+    gap: 5px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    height: 25px;
+  }
+
+  .nav-links {
+    gap: 5px;
+    font-size: 0.75rem;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  .btn-nav {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    gap: 1.2rem;
+  }
+
+  main section {
+    padding: 1.2rem 0.8rem;
+  }
+
+  main section i {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+  main section h2 {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+  }
+
+  main section p {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+  }
+
+  main section button {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  footer {
+    padding: 10px 5px;
+    font-size: 0.8rem;
   }
 }
 

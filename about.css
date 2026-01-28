@@ -130,14 +130,156 @@ body{
     opacity: 0.9;
 }
 
-        /* Responsive adjustment for mobile */
-        @media (max-width: 768px) {
+        /* Responsive adjustment for tablet and small screens */
+        @media (max-width: 1024px) {
+            .team-section {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+
+            .team-section h2 {
+                font-size: 36px;
+                margin-bottom: 40px;
+                margin-top: 40px;
+            }
+
+            .team-container {
+                flex-direction: column;
+                gap: 30px;
+                padding: 0 20px;
+                margin: 40px auto;
+            }
+
             .team-card {
                 flex-direction: column;
                 text-align: center;
                 align-items: center;
+                gap: 20px;
             }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .mission-section {
+                padding: 60px 20px;
+            }
+        }
+
+        /* Responsive adjustment for mobile */
+        @media (max-width: 768px) {
+            .team-section h2 {
+                font-size: 28px;
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+
+            .team-container {
+                flex-direction: column;
+                gap: 20px;
+                padding: 0 15px;
+                margin: 30px auto;
+            }
+
+            .team-card {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .info {
+                width: 100%;
+            }
+
+            .name {
+                font-size: 18px;
+            }
+
+            .role {
+                font-size: 12px;
+            }
+
+            .bio {
+                font-size: 13px;
+            }
+
             .social-links {
                 justify-content: center;
+            }
+
+            .mission-section {
+                padding: 40px 15px;
+            }
+
+            .mission-section h2 {
+                font-size: 24px;
+            }
+
+            .mission-section p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            .team-section h2 {
+                font-size: 22px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .team-container {
+                gap: 15px;
+                padding: 0 10px;
+                margin: 20px auto;
+            }
+
+            .team-card {
+                padding: 10px;
+                gap: 12px;
+            }
+
+            .profile-img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .name {
+                font-size: 16px;
+            }
+
+            .bio {
+                font-size: 12px;
+            }
+
+            .social-links {
+                gap: 8px;
+            }
+
+            .social-links a {
+                width: 28px;
+                height: 28px;
+                font-size: 12px;
+            }
+
+            .mission-section {
+                padding: 30px 10px;
+            }
+
+            .mission-section h2 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .mission-section p {
+                font-size: 0.95rem;
             }
         }
