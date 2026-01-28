@@ -101,6 +101,12 @@ nav {
   border-radius: 5px;
 }
 
+.heading{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5rem;
+  color: var(--primary-dark);
+}
 .btn-nav:hover {
   transform: scale(1.05); /* Slight pop effect */
   background-color: #008c82;
@@ -137,7 +143,7 @@ main section:hover {
 /* ===== Icons ===== */
 main section i {
   font-size: 2.5rem;
-  color: #6c63ff;
+  color: var(--primary-accent);
   margin-bottom: 1rem;
 }
 
