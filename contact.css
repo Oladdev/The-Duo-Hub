@@ -1,0 +1,241 @@
+/* --- CONTACT PAGE STYLES --- */
+
+.contact-section {
+    padding: 80px 5%;
+    background-color: var(--white);
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Stacks on mobile */
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Side: Contact Info */
+.contact-info {
+    flex: 1;
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: 50px;
+    min-width: 300px;
+}
+
+.contact-info h3 {
+    color: var(--primary-accent);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.info-item {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.info-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--primary-accent);
+}
+
+.info-text p {
+    margin-bottom: 5px;
+    opacity: 0.9;
+}
+
+/* Right Side: Message Form */
+.contact-form-container {
+    flex: 1.5; /* Takes up slightly more space */
+    background-color: var(--white);
+    padding: 50px;
+    min-width: 300px;
+}
+
+.contact-form-container h3 {
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border 0.3s;
+}
+
+/* When the user clicks an input */
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 5px rgba(0, 169, 157, 0.2);
+}
+
+textarea.form-control {
+    resize: vertical; /* Allows user to make it taller but not wider */
+    min-height: 120px;
+}
+
+/* Submit Button specific styles */
+.btn-submit {
+    width: 100%;
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-accent);
+}
+/* --- RESPONSIVE DESIGN --- */
+/* Tablets and smaller laptops */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-info {
+        padding: 40px 30px;
+        min-width: auto;
+    }
+
+    .contact-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form-container {
+        flex: 1;
+        padding: 40px 30px;
+        min-width: auto;
+    }
+
+    .info-item {
+        margin-bottom: 25px;
+    }
+
+    .info-icon {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 40px 3%;
+    }
+
+    .contact-wrapper {
+        border-radius: 8px;
+    }
+
+    .contact-info {
+        padding: 30px 20px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .contact-info > p {
+        font-size: 0.95rem;
+        margin-bottom: 20px !important;
+    }
+
+    .contact-form-container {
+        padding: 30px 20px;
+    }
+
+    .contact-form-container h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+    }
+
+    .form-control {
+        padding: 10px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    textarea.form-control {
+        min-height: 100px;
+    }
+
+    .btn-submit {
+        padding: 12px;
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+
+    .info-item {
+        margin-bottom: 20px;
+    }
+
+    .info-icon {
+        font-size: 1.2rem;
+        margin-right: 12px;
+    }
+
+    .info-text strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .info-text p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+    .contact-info,
+    .contact-form-container {
+        padding: 20px 15px;
+    }
+
+    .contact-info h3,
+    .contact-form-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .form-control {
+        padding: 8px;
+    }
+
+    .btn-submit {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
