@@ -1,6 +1,7 @@
 <?php
 
-if (isset($_POST['submit'])) {
+// Either check for the submit button or use the request method
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && (isset($_POST['submit']) || !empty($_POST))) {
     // grab and sanitize values (basic example)
     $fullname    = htmlspecialchars(trim($_POST['fullname'] ?? ''));
     $date        = htmlspecialchars(trim($_POST['dob'] ?? ''));
